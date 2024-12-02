@@ -1,13 +1,13 @@
 name: Python application
 on: 
     push: 
-        branches: -dev
+        branches: 
+            - dev
 
 jobs: 
     pepe:
         runs-on: self-hosted
         steps:
-        - name: Python application
         - uses: actions/setup-python@v3
         - uses: checout@v3
         - run: | 
